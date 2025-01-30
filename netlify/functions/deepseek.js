@@ -7,7 +7,7 @@ exports.handler = async (event) => {
     if (DEEPSEEK_API_KEY) {
         console.log('🔑 API Key:', DEEPSEEK_API_KEY);
     } else {
-        console.log('Missing api key')
+        console.log('Missing api key');
     }
     
 
