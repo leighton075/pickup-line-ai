@@ -1,5 +1,3 @@
-require('dotenv').config();
-
 exports.handler = async (event) => {
     console.log('🔹 DeepSeek function triggered');
     console.log('📝 Request body:', event.body);
