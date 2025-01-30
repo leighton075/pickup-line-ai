@@ -27,7 +27,7 @@ async function sendMessage() {
 }
 
 async function getDeepSeekResponse(userMessage) {
-    const response = await fetch('https://your-netlify-site.netlify.app/.netlify/functions/deepseek', {
+    const response = await fetch('/.netlify/functions/deepseek', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ message: userMessage })
