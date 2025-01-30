@@ -4,7 +4,12 @@ exports.handler = async (event) => {
 
     const DEEPSEEK_API_KEY = process.env.DEEPSEEK_API_KEY;
     console.log('🔑 API Key exists:', !!DEEPSEEK_API_KEY);
-    console.log('🔑 API Key:', DEEPSEEK_API_KEY);
+    if (DEEPSEEK_API_KEY) {
+        console.log('🔑 API Key:', DEEPSEEK_API_KEY);
+    } else {
+        console.log('Missing api key')
+    }
+    
 
     try {
         const { message } = JSON.parse(event.body);
