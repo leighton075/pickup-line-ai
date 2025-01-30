@@ -27,8 +27,8 @@ exports.handler = async (event) => {
                     { role: 'system', content: 'You are a witty pickup line generator.' },
                     { role: 'user', content: message }
                 ],
-                max_tokens: 50,
-                temperature: 0.6
+                max_tokens: 100,
+                temperature: 0.7
             }),
             signal: controller.signal // Attach the timeout signal
         });
